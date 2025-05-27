@@ -1,4 +1,4 @@
-var links = [{label: 'link1', bg: '#c0392b'}, 
+var links = [{label: 'Super Mario', bg: '/img/superMario.png'}, 
              {label: 'link2', bg: '#16a085'}, 
              {label: 'link3', bg: '#8e44ad'}, 
              {label: 'link4', bg: '#27ae60'}, 
@@ -95,11 +95,26 @@ window.onresize = function() {
 }
 
 function linkOver(e) {
-  var thisLink = e.target, thisHover = thisLink.nextSibling;
-  thisLink.style.paddingLeft = radius*1.25+'px';
+  var thisLink = e.target;
+  var thisHover = thisLink.nextSibling;
+  var bg = thisLink.dataset.color;
+
+  thisLink.style.paddingLeft = radius * 1.25 + 'px';
   thisHover.style.opacity = 1;
-  document.body.style.backgroundColor = thisLink.dataset.color;
+
+  // Verifica se é uma imagem (termina com .jpg, .png, etc.)
+  if (bg.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
+    document.body.style.backgroundImage = `url(${bg})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundColor = ''; // limpa cor anterior
+  } else {
+    document.body.style.backgroundImage = '';
+    document.body.style.backgroundColor = bg;
+  }
 }
+
 
 function linkOut(e) {
   var thisLink = e.target, thisHover = thisLink.nextSibling;
