@@ -1,9 +1,9 @@
-var links = [{label: 'Super Mario', bg: 'img/superMario.png'}, 
-             {label: 'link2', bg: '#16a085'}, 
-             {label: 'link3', bg: '#8e44ad'}, 
-             {label: 'link4', bg: '#27ae60'}, 
-             {label: 'link5', bg: '#f39c12'}, 
-             {label: 'link6', bg: '#2980b9'}];
+var links = [{label: 'Super Mario', bg: './img/superMario.jpg'}, 
+             {label: 'Calculadora', bg: '#8e44ad'}, 
+             {label: 'Snake', bg: './img/snake.jpg'}, 
+             {label: 'Beta', bg: '#27ae60'}, 
+             {label: 'Beta', bg: '#f39c12'}, 
+             {label: 'Beta', bg: '#2980b9'}];
 var windowHeight = window.innerHeight;
 if(windowHeight === 0) windowHeight = 238;
 var radius = windowHeight*0.6,
