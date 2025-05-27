@@ -1,4 +1,4 @@
-var links = [{label: 'Super Mario', bg: '/img/superMario.png'}, 
+var links = [{label: 'Super Mario', bg: 'img/superMario.png'}, 
              {label: 'link2', bg: '#16a085'}, 
              {label: 'link3', bg: '#8e44ad'}, 
              {label: 'link4', bg: '#27ae60'}, 
