@@ -98,3 +98,18 @@ p {
 span {
     color: #2BD6B4;
 }
+
+#link-fixado {
+	position: fixed;
+	bottom: 500px;   /* Distância da base da tela */
+	left: 200px;    /* Distância do canto direito */
+	z-index: 1000;  /* Garante que fique por cima de outros elementos */
+	padding-left: 300px;
+  }
+  
+  #link-fixado img {
+	width: 200px;    /* Ajuste o tamanho conforme necessário */
+	height: auto;
+	cursor: pointer;
+  }
+  
