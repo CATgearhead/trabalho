@@ -107,7 +107,7 @@ span {
 #link-fixado {
   position: fixed;
   bottom: 500px; /* Distância da base da tela */
-  left: 200px; /* Distância do canto direito */
+  left: 150px; /* Distância do canto direito */
   z-index: 1000; /* Garante que fique por cima de outros elementos */
   padding-left: 300px;
 }
@@ -116,12 +116,14 @@ span {
   width: 200px; /* Ajuste o tamanho conforme necessário */
   height: auto;
   cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 10px 10px #b11c1c;
 }
 
 #link2-fixado {
   position: fixed;
   bottom: 500px; /* Distância da base da tela */
-  right: 1800px; /* Distância do canto direito */
+  right: 1600px; /* Distância do canto direito */
   z-index: 1000; /* Garante que fique por cima de outros elementos */
   padding-left: 300px;
 }
@@ -130,4 +132,23 @@ span {
   width: 200px; /* Ajuste o tamanho conforme necessário */
   height: auto;
   cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 10px 10px #024d10;
+}
+
+#link3-fixado {
+  position: fixed;
+  bottom: 260px; /* Distância da base da tela */
+  right: 1540px; /* Distância do canto direito */
+  z-index: 1000; /* Garante que fique por cima de outros elementos */
+  padding-left: 300px;
+  
+}
+
+#link3-fixado img {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 10px 10px #4d0247;
 }
