@@ -152,3 +152,18 @@ span {
   border-radius: 40px;
   box-shadow: 10px 10px #4d0247;
 }
+
+#link4-fixado {
+  position: fixed;
+  bottom: 650px; /* Distância da base da tela */
+  left: 1200px; /* Distância do canto direito */
+  z-index: 1000; /* Garante que fique por cima de outros elementos */
+  padding-left: 300px;
+  
+}
+
+#link4-fixado img {
+  width: 600px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  cursor: pointer;
+}

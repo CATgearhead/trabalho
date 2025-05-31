@@ -144,5 +144,5 @@ function setTransition(element, string) {
   element.style.msTransition = string;
   element.style.OTransition = string;
   element.style.transition = string;
+  
 }
-
