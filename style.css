@@ -90,6 +90,17 @@ h1 {
   font-family: "Cherry Swash", cursive;
 }
 
+.sub {
+  position: relative;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 40px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Cherry Swash", cursive;
+  top: 500px;
+}
+
 p {
   position: absolute;
   bottom: 20px;
@@ -155,15 +166,16 @@ span {
 
 #link4-fixado {
   position: fixed;
-  bottom: 650px; /* Distância da base da tela */
-  left: 1200px; /* Distância do canto direito */
+  bottom: 400px; /* Distância da base da tela */
+  left: 900px; /* Distância do canto direito */
   z-index: 1000; /* Garante que fique por cima de outros elementos */
   padding-left: 300px;
   
 }
 
 #link4-fixado img {
-  width: 600px; /* Ajuste o tamanho conforme necessário */
+  width: 1000px; /* Ajuste o tamanho conforme necessário */
   height: auto;
   cursor: pointer;
 }
+
