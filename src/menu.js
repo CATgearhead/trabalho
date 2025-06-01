@@ -1,6 +1,6 @@
-var links = [{label: 'Super Mario', bg: './img/superMario.jpg'}, 
-             {label: 'Calculadora', bg: '#8e44ad'}, 
-             {label: 'Snake', bg: './img/snake.jpg'}, 
+var links = [{label: 'Super Mario', bg: './img/superMario.jpg', url: './paginaMario/paginaMario.html'}, 
+             {label: 'Calculator', bg: './img/calculadora.png', url: '/jogoDaCalculadora/calculadora.html'}, 
+             {label: 'Snake', bg: './img/snake.jpg', url: './paginaCobrinha/cobrinha.html'}, 
              {label: 'Beta', bg: '#27ae60'}, 
              {label: 'Beta', bg: '#f39c12'}, 
              {label: 'Beta', bg: '#2980b9'}];
@@ -38,7 +38,7 @@ function addLinks() {
   for (var i=0, l=links.length; i<l; i++) {
     link = document.createElement('a'),
     hover = document.createElement('span');
-    link.href = "#";
+    link.href = links[i].url;
     link.dataset.color = links[i].bg;
     link.style.display = 'inline-block';
     link.style.textDecoration = 'none';

@@ -2,12 +2,12 @@
 const canvas=document.querySelector('.canvas');
 const ctx= canvas.getContext('2d');
 const score=document.querySelector('.scoreValor'); //pontuação
-const scoreFinal=document.querySelector('.scoreFinal');
+const scoreFinal=document.querySelector('.scoreFinal'); //pontuação final
 const menu=document.querySelector('.menu');
 const btnPlay=document.querySelector('.btn-play'); 
 const comeu= new Audio('./audios/audio.mp3'); //audio para quando a cobrinha come a comida
 const size=30;
-const cobra = 
+let cobra = 
 [   {x:270, y:270},
                
 ];
@@ -18,10 +18,6 @@ let id; //variável para armazenar o id do setTimeout
 const adicionarScore=()=>{
 score.innerText=parseInt(score.innerText) + 10
 }
-const adicionarScoreFinal=()=>{
-    score.innerText=parseInt(score.innerText) + 10
-    scoreFinal.style.display='flex'; 
-    }
 const randomNumber= (min,max)=>{
     return Math.round(Math.random() *(max-min) + min);
 }
@@ -148,8 +144,7 @@ const cabeca= cobra[cobra.length -1]; //pega a última posição da cobrinha
     direcao=''; //para a cobrinha
     menu.style.display='flex'; //mostra o menu
    canvas.style.filter = "blur(5px)";//aplica um filtro de desfoque no canvas
-   adicionarScoreFinal();
-   
+       scoreFinal.innerText="Score: " + score.innerText; //atualiza a pontuação final
  }
 const gameloop= () =>{
     
@@ -181,3 +176,12 @@ document.addEventListener('keydown',({key})=>{
          if( key == 'ArrowDown'&& direcao != 'up'){
         direcao='down';}
 })
+btnPlay.addEventListener('click',({key})=>{
+    score.innerText='00'; //reseta a pontuação
+    menu.style.display='none'; //esconde o menu
+    canvas.style.filter='none'; //remove o filtro de desfoque do canvas
+    cobra = [{x:270, y:270}]; //reseta a cobrinha
+    direcao=''; //reseta a direção da cobrinha
+   
+})
+  

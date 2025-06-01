@@ -2,7 +2,8 @@ nav {
   margin: 27px auto 0;
 
   position: relative;
-  width: 590px;
+  width: 100%;
+  max-width: 590px;
   height: 50px;
   background-color: #34495e;
   border-radius: 8px;
@@ -166,16 +167,15 @@ span {
 
 #link4-fixado {
   position: fixed;
-  bottom: 400px; /* Distância da base da tela */
-  left: 900px; /* Distância do canto direito */
+  top: 600px; /* Distância da base da tela */
+  left: 1200px; /* Distância do canto direito */
   z-index: 1000; /* Garante que fique por cima de outros elementos */
   padding-left: 300px;
   
 }
 
 #link4-fixado img {
-  width: 1000px; /* Ajuste o tamanho conforme necessário */
+  width: 600px; /* Ajuste o tamanho conforme necessário */
   height: auto;
   cursor: pointer;
 }
-
